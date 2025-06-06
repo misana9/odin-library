@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script defer src="javascript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header"></header>
+    <main id="main-container">
+        <button id="addButton">Add books</button>
+        <div id="book-container"></div>
+    </main>
+    <footer id="header"></footer>
+
+    <dialog id="addPopup">
+        <form id="new-book-form" action="/action_page.php" method="dialog" autocomplete="off">
+            <div>
+                <label for="titleName">Title</label>
+                <input type="text"  id="titleName" required>
+            </div>
+
+            <div>
+                <label for="authorName">Author</label>
+                <input type="text" id="authorName" required>
+            </div>
+
+            <div>
+                <label for="pageCount">Pages</label>
+                <input type="text" id="pageCount" required>
+            </div>
+
+            <div>
+                <label for="hasRead">Has read?</label>
+                <input type="checkbox" id="hasRead">
+            </div>
+
+            <div class="button-container">
+
+                <div class="button">
+                    <button type="button" id="closeBtn">Close</button>
+                </div>
+
+                <div class="button">
+                    <button type="reset">Reset</button> 
+                </div>
+
+                <div class="button">
+                    <button type="submit">Add</button>
+                </div>
+            </div>
+
+
+        </form>
+    </dialog>
+
+
+</body>
+</html>

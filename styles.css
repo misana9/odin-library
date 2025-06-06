@@ -1,0 +1,70 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 1.5fr 10fr .5fr;
+}
+
+header{
+    grid-row: 1/2;
+    background-color: aliceblue;
+}
+
+main{
+    grid-row: 2/3;
+    background-color: blanchedalmond;
+}
+
+.book-container{
+    display: flex;
+}
+
+footer{
+    grid-row: 3/4;
+    background-color: aqua;
+}
+
+#addPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  z-index: 1000;
+  justify-content: center;
+}
+
+#addPopup input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#addPopup .button{
+    display: flex;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.book-card{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+}
